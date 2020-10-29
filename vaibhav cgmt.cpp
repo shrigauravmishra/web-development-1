@@ -41,7 +41,7 @@ void display(void)
 int main(int argc,char *argv[])
 {
 	
-system("cls");
+System("cls");
 	printf("Enter value of x1: ");
 	
 	scanf("%f",&x1);
@@ -52,12 +52,12 @@ system("cls");
 	printf("Enter value of y2: ");
 	scanf("%f",&y2);
       glutInit(&argc,argv);
-	glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB);
-	glutInitWindowSize (500, 500);
-	glutInitWindowPosition (100, 100);
-	glutCreateWindow ("DDA Line");
+	glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+	glutInitWindowSize(500, 500);
+	glutInitWindowPosition(100, 100);
+	glutCreateWindow("DDA Line");
 	glClearColor(1.0,1.0,1.0,0.0);  
-	glMatrixMode (GL_PROJECTION);
+	glMatrixMode(GL_PROJECTION);
             gluOrtho2D (0.0, 200.0, 0.0, 150.0);
 	glutDisplayFunc(display);
            glutMainLoop();  
